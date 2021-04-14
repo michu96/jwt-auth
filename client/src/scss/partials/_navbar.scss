@@ -1,0 +1,31 @@
+.navbar {
+  color: #fff;
+  background: navy;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  &__link-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 0.2em 0.5em;
+    color: rgb(215, 215, 255);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+
+    &--active {
+      color: rgb(238, 238, 255);
+      border-bottom: 1px solid rgb(238, 238, 255);
+    }
+  }
+}
